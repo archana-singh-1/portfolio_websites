@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.maincontain {
+    background: linear-gradient(35deg, #11cdef, #1171ef) !important;
+}
+
+.navbar {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #172b4d !important;
+    box-shadow: 0 1px 10px hsla(240, 2%, 52%, .1);
+    padding: 20px 30px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f39c12; 
+}
+
+.contain {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro {
+    color: white;
+    padding-top: 30px;
+    font-family: "Roboto", sans-serif;
+}
+
+.introduction {
+    width: 50%;
+    margin-top: 70px;
+}
+
+.aboutme {
+    color: white;
+    line-height: 31px;
+    padding-top: 15px;
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+}
+
+.scene {
+    position: relative;
+    width: 400px;
+    height: 300px;
+}
+
+
+.table {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 300px;
+    height: 20px;
+    background-color: #8B4513; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.chair {
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 100px;
+    height: 50px;
+    background-color: #483D8B; 
+    border-radius: 5px;
+}
+
+
+.engineer {
+    position: absolute;
+    bottom: 50px;
+    left: 170px;
+    width: 60px;
+    height: 120px;
+    animation: typing 1s infinite; 
+}
+
+.head {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 40px;
+    height: 40px;
+    background-color: #FFCC99; 
+    border-radius: 50%;
+    border: 2px solid #000;
+}
+
+.body {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+
+.left-arm, .right-arm {
+    position: absolute;
+    top: 40px;
+    width: 15px;
+    height: 60px;
+    background-color: #4169E1;
+    border-radius: 10px;
+}
+
+.left-arm {
+    left: -15px;
+}
+
+.right-arm {
+    right: -15px;
+}
+
+
+.left-leg, .right-leg {
+    position: absolute;
+    bottom: 0;
+    width: 15px;
+    height: 40px;
+    background-color: #4169E1;
+}
+
+.left-leg {
+    left: 10px;
+}
+
+.right-leg {
+    right: 10px;
+}
+
+
+.laptop {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background-color: #333;
+    border-radius: 2px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: glow 2s infinite alternate; 
+}
+
+.laptop1 {
+    bottom: 80px;
+    left: 100px;
+    background-color: #228B22; 
+}
+
+.laptop2 {
+    bottom: 80px;
+    left: 180px;
+    background-color: #DC143C; 
+}
+
+.laptop3 {
+    bottom: 80px;
+    left: 260px;
+    background-color: #FFD700; 
+}
+
+.laptop::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    background-color: #222;
+    border-radius: 2px;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    margin-right: 15px;
+    text-decoration: none;
+    color:beige; 
+    font-size: 24px; 
+}
+
+.social-links a:hover {
+    color: #0077b5; 
+}
+
+.resume-button {
+    background-color: white;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 700;
+    height: 42px;
+    width: 163px;
+    margin-top: 14px;
+}
+
+.aboutContain{
+    margin: auto;
+    margin-top:100px;
+    background: white;
+}
+@keyframes typing {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.do{
+ 
+    width: 1200px;
+    margin: auto;
+}
+.whatIdo{
+    color: gray;
+    text-align: center;
+    font-size: 29px;
+    padding-top: 40px;
+    font-family: "Roboto", sans-serif;
+
+}
+.introd{
+    color: #333;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 17px;
+    font-family: "Roboto", sans-serif;
+}
+
+.aboutzuvy{
+    color: #333;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 45px;
+    font-family: "Roboto", sans-serif;
+}
+.aboutnav{
+    color: #333;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 45px;
+    font-family: "Roboto", sans-serif;
+}
+.whatNavguru{
+    color: #333;
+    font-size: 30px;
+    line-height: 30px;
+    padding-top: 45px;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+
+}
+
+.navgurukuldetails{
+    color: #333;
+    font-size: 22px;
+    line-height: 30px;
+    padding-top: 45px;
+    font-family: "Roboto", sans-serif;
+
+}
+.border{
+    border: solid 1px black;
+    margin-top: 60px;
+}
+
+.skillcontain{
+    margin: auto;
+    background-color: white;
+    padding-top: 26px;
+}
+.skill{
+    margin: auto;
+    width: 1200px;;
+
+  
+
+}
+
+.info{
+    color: gray;
+    text-align: center;
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+}
+
+.infobor{
+    width: 224px;
+    border: solid 2px orange;
+    margin-left: 482px;
+    margin-top: 8px;
+}
+
+.allskill{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.allskills{
+    color: #333;
+    font-size: 23px;
+    font-weight: 600;
+
+}
+.skilllist{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.projectContain{
+    background-color: white;
+    padding-top: 48px;
+}
+.allproject{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.movieImg{
+    width: 600px;
+    height: 350px;
+    border: solid 4px whitesmoke;
+    border-radius: 4px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.img1{
+    width: 570px;
+    text-align: center;
+
+}
+.live{
+    text-decoration: none;
+    color: black;
+    width: 102px;
+    border: solid 2px whitesmoke;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.donation{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    margin-top: 40px;
+
+
+}
+
+.project{
+    text-align: center;
+    color: gray;
+    text-align: center;
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.projectbor{
+    width: 224px;
+    border: solid 2px orange;
+    margin-left: 791px;
+    margin-top: 8px;
+
+}
+
+.contactContain{
+    background-color: white;
+    padding-top: 40px;
+}
+
+.contact{
+    width: 1200px;
+    margin: auto;
+}
+
+.borders{
+    width: 1200px;
+    border: solid 1px black;
+    margin: auto;
+    margin-top: 60px;
+}
+
+.contacts{
+    text-align: center;
+    color: gray;
+    text-align: center;
+    font-size: 29px;
+    font-family: "Roboto", sans-serif;
+
+}
+
+.contctbor{
+    width: 224px;
+    border: solid 2px orange;
+    margin-left: 493px;
+    margin-top: 8px;
+
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.submit-btn {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+.footerContain{
+    background-color: white;
+    padding-top: 180px;
+}
+
+.footContain{
+    background-color: #333;
+    min-height: 270px;
+}
+
+.footerPort{
+    margin-left: 903px;
+    color: rgb(27, 78, 218);
+    font-size: 32px;
+    padding-top: 35px;
+    font-family: "Roboto", sans-serif;
+}
+
+.contactDetails{
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.aboutPort{
+    color: white;
+    font-size: 26px;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+}
+
+.informtext{
+    color: whitesmoke;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.footerBor{
+    border: solid 1px whitesmoke;
+    width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.year{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: whitesmoke;
+    font-family: "Roboto", sans-serif;
+}
