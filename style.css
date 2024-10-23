@@ -56,7 +56,7 @@
 }
 
 .intro {
-    color: white;
+    color: black;
     padding-top: 30px;
     font-family: "Roboto", sans-serif;
 }
@@ -67,7 +67,7 @@
 }
 
 .aboutme {
-    color: white;
+    color: gray;
     line-height: 31px;
     padding-top: 15px;
     font-family: "Roboto", sans-serif;
@@ -260,23 +260,7 @@
 }
 
 
-@keyframes typing {
-    0%, 100% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-2px);
-    }
-}
 
-@keyframes glow {
-    from {
-        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    }
-    to {
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-}
 
 .do{
  
@@ -603,4 +587,236 @@
     margin-left: 138px;
 }
    
+@media (max-width: 600px) {
+    .contain{
+        width: auto;
+        margin: 0;
+
+    } 
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .logo{
+        display: none;
+    }
+
+    .imageCircle {
+        width: 122px;
+        height: 130px;
+        border-radius: 100%;
+        object-fit: cover;
+        margin-top: 168px;
+        margin-left: 0;
+    }
+
+    .introduction {
+        width: auto;
+        margin-top: 70px;
+    }
+
+    .aboutme {
+        font-size: 15px;
+        padding: 23px;
+        color: #333;
+    }
+
+    .intro{
+        padding-left: 23px;
+        color: #333;
+
+    }
+
+    .social-links {
+        margin-top: 20px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-left: 27px;
+    
+    }
+    .resume-button{
+        margin-left: 0;
+    }
+
+    .aboutContain{
+        width: auto;
+    }
+
+    .do {
+        width: auto;
+    }
+    .infobor {
+        margin-left: 110px;
+    }
+
+    .introd {
+        color: #333;
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 17px;
+        padding-left: 12px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .whatIdo {
+        color: gray;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        font-family: "Roboto", sans-serif;
+    }
+
+    .aboutzuvy{
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 17px;
+        padding-left: 12px;
+        font-family: "Roboto", sans-serif;
+
+    }
+    .aboutnav{
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 17px;
+        padding-left: 12px;
+        font-family: "Roboto", sans-serif;
+
+
+    }
+    .whatNavguru{
+        color: gray;
+        text-align: center;
+        font-size: 25px;
+        padding-top: 40px;
+        font-family: "Roboto", sans-serif;
+
+    }
+
+    .navgurukuldetails {
+        font-size: 18px;
+        line-height: 30px;
+        padding-top: 17px;
+        padding-left: 12px;
+        font-family: "Roboto", sans-serif;
+
+    }
+    .skill {
+        width: auto;
+    }
+
+    .allskills {
+        color: #333;
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .allproject {
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 60px;
+    }
+
+    
+    .donation {
+        width: auto;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 40px;
+    }
+
+    .movieImg {
+        width: auto;
+        height: auto;
+        border: solid 4px whitesmoke;
+        border-radius: 4px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        margin: 15px;
+    }
+    .live{
+        margin: 15px;
+    }
+
+    .borders{
+        width: auto;
+    }
+
+    .contact{
+        width: auto;
+    }
+
+    .contctbor {
+        
+        margin-left: 128px;
+    }
+    .footerPort {
+        text-align: center;
+        margin-left: auto;
+    }
+    .contactDetails{
+        width: auto;
+    }
+
+   .aboutPort {
+    font-size: 17px;
+    font-weight: 400;
+    
+   }
+   .informtext{
+    font-size: 16px;
+   }
+   .projectbor {
+    margin-left: 128px;
+   }
+
+   .tags{
+    font-size: 12px;
+   }
+
+
+    
+
+}
+
+@media (max-width: 600px) {
+    .skilllist {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr); 
+      grid-template-rows: auto auto; 
+      gap: 10px; 
+      justify-items: center; 
+    }
+  
+  
+    .skill-item:nth-child(n+7) {
+      grid-column: span 1; 
+    }
+  
+    .skill-item {
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .skill-item svg {
+      height: 25px;
+      width: 25px;
+    }
+  
+    .tags {
+      font-size: 12px;
+    }
+    .navbar{
+        position:unset
+    }
+  }
+
+
 
